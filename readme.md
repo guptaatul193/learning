@@ -1,1 +1,1 @@
-This repository stores all the code that I used for learning purpose
+This repository stores all the code that I use for learning purpose
