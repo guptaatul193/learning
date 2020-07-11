@@ -1,0 +1,2 @@
+2020-07-01 21:08:04,044 - INFO - This is a debug message
+2020-07-01 21:08:12,484 - INFO - This is a debug message
