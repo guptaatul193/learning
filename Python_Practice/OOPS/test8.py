@@ -1,4 +1,5 @@
 """ What is the meaning of '_' and '__' in Python variable names? """
+""" Encapsulation used here """
 
 class Test:
 	__sum = 0
