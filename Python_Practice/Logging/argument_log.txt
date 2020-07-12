@@ -1,0 +1,2 @@
+2020-07-12 17:23:03,634	FirstLogEntry
+2020-07-12 17:23:09,895	SecondLogEntry
