@@ -4,34 +4,31 @@ existing class without modifying it. The newly formed class is a
 derived class (or child class). Similarly, the existing class is a
 base class (or parent class).
 """
+class Grandfather:
+	def lastName(self):
+		print('Gupta')
 
-# parent class
-class Bird:
+class Father(Grandfather):
+	def __init__(self):
+		print('Father Object Created !!')
+	def address(self):
+		print('Pune, Maharashtra, India.')
 
-    def __init__(self):
-        print("Bird is ready")
+class Daughter(Father):
+	def __init__(self):
+		print('daughter Object Created !!')
+	def schoolName(self):
+		print('DAV Public School')
 
-    def whoisThis(self):
-        print("Bird")
+class Son(Father):
+	def __init__(self):
+		print('Son Object Created !!')
+	def schoolName(self):
+		print('DPS')
 
-    def swim(self):
-        print("Swim faster")
+f = Father()
+d = Daughter()
+s = Son()
 
-# child class
-class Penguin(Bird):
-
-    def __init__(self):
-        # call super() function
-        super().__init__()
-        print("Penguin is ready")
-
-    def whoisThis(self):
-        print("Penguin")
-
-    def run(self):
-        print("Run faster")
-
-peggy = Penguin()
-peggy.whoisThis()
-peggy.swim()
-peggy.run()
+s.address()
+d.lastName()
