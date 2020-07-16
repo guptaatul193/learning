@@ -8,8 +8,9 @@
 Example:
 speed --> 40,50,60
 effic. --> 2,4,1
+max number of machines --> 3
 
-
+Max Performance --> 200 from machine 2 alone
 """
 
 from itertools import combinations
@@ -20,10 +21,10 @@ def maxPerformance(speed, efficiency, maxmachines):
 	for i in range(1,maxmachines+1):
 		combs.extend( combinations( list(range(len(speed))), i ) )
 	for i in combs:
-		s = [ j for j in speed if speed.index(j) in i ]
-		e = [ j for j in efficiency if efficiency.index(j) in i ]
-		if len(s)==0 or len(e)==0:
-			continue
+		s = [ j for ind,j in enumerate(speed) if ind in i ]
+		e = [ j for ind,j in enumerate(efficiency) if ind in i ]
+		# if len(s)==0 or len(e)==0:
+			# continue
 		out[sum(s)*min(e)] = i
 
 	return (max(out), out[max(out)])
@@ -34,11 +35,13 @@ if __name__ == '__main__':
 	s = []
 	e = []
 	for i in range(n):
-		print('\nMachine %d - ' %(i+1))
+		print('\nMachine %d - \n------------' %(i+1))
 		s.append( int(input('Enter Speed: ')) )
 		e.append( int(input('Enter Efficiency: ')) )
 
-	maxi = int( input('Please Enter Maximum Machine Limit: ') )
+	maxi = int( input('\nPlease Enter Maximum Machine Limit: ') )
+	if maxi > n:
+		print('\n*********  Max Limit Cannot Exceed Total Machine, considering all machines for performance calculation !! ******\n')
 
 	machine = maxPerformance( s, e, maxi )
 
