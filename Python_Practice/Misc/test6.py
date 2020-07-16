@@ -23,9 +23,7 @@ def maxPerformance(speed, efficiency, maxmachines):
 	for i in combs:
 		s = [ j for ind,j in enumerate(speed) if ind in i ]
 		e = [ j for ind,j in enumerate(efficiency) if ind in i ]
-		# if len(s)==0 or len(e)==0:
-			# continue
-		out[sum(s)*min(e)] = i
+		out[ sum(s)*min(e) ] = i
 
 	return (max(out), out[max(out)])
 
