@@ -108,3 +108,13 @@ v2 = np.array( [5,6,7,8] )
 print( np.vstack( [v1,v2] ) ) # VERTICAL STACKING
 print( np.hstack( (v1,v2) ) ) # HORIZONTAL STACKING
 print('\n----------------------------------------\n')
+
+
+# TRANSPOSE and FLATTEN
+v1 = np.array( [[1,2,3,4],[5,6,7,8]] )
+print('Before\n--------\n ',v1)
+v2 = v1.transpose()
+v3 = v1.flatten()
+print('Transpose\n--------\n', v2)
+print('Flatten\n-------\n', v2)
+print('\n----------------------------------------\n')
