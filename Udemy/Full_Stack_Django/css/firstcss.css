@@ -1,0 +1,16 @@
+body{
+	background: url(https://free4kwallpapers.com/uploads/originals/2019/12/31/journey-painting-wallpaper.jpg);
+	background-repeat: repeat;
+}
+
+#id1{
+	color: red;
+}
+
+li{
+	background: blue;
+}
+
+.class1{
+	color: green;
+}

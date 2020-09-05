@@ -1,0 +1,36 @@
+body{
+	background: lightblue;
+}
+
+h1{
+	border: 1px solid black;
+}
+
+h3{
+	color: purple;
+}
+
+input{
+	border: 2px solid rgb(194,147,17);
+}
+
+p{
+	background: lightyellow;
+}
+
+.textblock{
+	border: 5px solid grey;
+}
+
+.lastone{
+	background: blue;
+	border: dashed yellow 2px;
+}
+
+a{
+	color: red;
+}
+
+a:visited{
+	color: blue;
+}
