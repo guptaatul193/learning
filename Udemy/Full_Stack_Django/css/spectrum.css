@@ -1,0 +1,35 @@
+h2{
+	font-family: 'Long Cang', cursive;
+	text-align: center;
+}
+
+table{
+	margin: auto;
+}
+
+td{
+	background: black;
+	height: 200px;
+	width: 100px;
+	border: solid white 6px;
+}
+
+#cell1{
+	background-color: #708d81;
+}
+
+#cell2{
+	background-color: yellow;
+}
+
+#cell3{
+	background-color: blue;
+}
+
+#cell4{
+	background-color: green;
+}
+
+#cell5{
+	background-color: orange;
+}

@@ -1,0 +1,15 @@
+.top1{
+	border: blue solid 2px;
+	margin: auto;
+	text-align: center;
+	width: 30%;
+}
+
+
+.bottom1{
+	border: red solid 2px;
+	width: 50%;
+	text-align: right;
+	padding: 20px;
+	font-style: italic;
+}
