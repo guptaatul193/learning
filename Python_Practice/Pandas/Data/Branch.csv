@@ -1,0 +1,8 @@
+BranchCd,BranchName,HodId,Campus,Capacity
+EEE,Electronics and Electrical Engineering,1,Camp1,100
+EE,Electrical Engineering,2,Camp2,150
+ME,Mechanical Engineering,3,Camp3,100
+CSE,Computer Science Engineering,4,Camp4,130
+BE,Biotechnology Engineering,5,Camp5,110
+IT,Intormation Technology,6,Camp6,100
+CE,Civil Engineering,7,Camp7,120
